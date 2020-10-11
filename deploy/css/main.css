@@ -1,0 +1,150 @@
+body {
+    background: #272d37;
+    padding:0;
+    margin:0;
+    font-family: "Libre Franklin", sans-serif;
+    color:#cfd4db;
+}
+
+.center {
+	position:absolute;
+	top:50%;
+	left:50%;
+	-moz-transform:translate(-50%,-50%);
+	-webkit-transform:translate(-50%,-50%);
+	transform:translate(-50%,-50%);
+}
+
+#frame {
+    max-width: 800px;
+    max-height: 600px;
+    width: 100%;
+    height: 100%;
+}
+
+#chooser {
+	max-width: 800px;
+	width: 100%;
+	margin:0 auto;
+}
+
+.hidden {
+	display:none;
+}
+
+label.section {
+    color: #e91e63;
+    font-size:110%;
+    margin-bottom:10px;
+}
+
+h1 {
+    font-weight:bold;
+    color:white;
+    margin-bottom:20px;
+}
+
+
+#frame.error .disable, 
+#frame.error #stage {
+	display:none;
+}
+#frame.error {
+	border:1px dotted #c00;
+	background-color: #300;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	color:#fff;
+}
+#frame .error {
+	display: none;
+}
+#frame.error .error {
+	display:block;
+}
+
+#frame img {
+	position:absolute;
+	z-index: 1;
+}
+#logo {
+	bottom:5px;
+	right:0;
+}
+
+::selection {
+    color:#fff;
+    background: #55a1db;
+}
+
+#chooser #loader,
+#chooser.loading form {
+	display:none;
+}
+#chooser.loading #loader {
+	display:inherit;
+}
+
+#lineup {
+	bottom:10px;
+	right:120px;
+}
+
+#stage {
+	position:absolute;
+	z-index: 0;
+}
+
+.disable {
+	-moz-user-select:none;
+	-webkit-user-select:none;
+	user-select:none;
+	pointer-events: none;
+}
+
+#counter {
+    background: #ccc;
+	width: 80px;
+	overflow: hidden;
+    white-space: nowrap;
+	position: absolute;
+	background-color:#105CB6;
+	padding: 3px;
+	top:48px;
+	left:0;
+	z-index: 2;
+	color:#0ff;
+	font-family: "Libre Franklin", Arial;
+	font-size: 9px;
+	font-weight: bold;
+}
+
+.renderer-options label {
+    font-weight: normal;
+}
+
+hr {
+    border:0;
+    border-bottom: 1px solid #3d495a;
+}
+
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+}

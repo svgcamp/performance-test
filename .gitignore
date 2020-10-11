@@ -1,0 +1,6 @@
+.DS_Store
+node_modules
+deploy/*.js
+deploy/*.map
+.idea
+npm-debug.log
